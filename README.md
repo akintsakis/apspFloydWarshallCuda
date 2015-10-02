@@ -6,3 +6,8 @@ The program takes one argument, the size of the array. The float numbers within 
 The Floyd Warshall Algorithm is executed on the GPU first and then on the CPU so as to compare execution times. Generally, the GPU is orders of magnitude faster but it depends on the specific GPU and CPU used.
 
 The blocked version uses a different algorithm that utilizes shared memory and is substantially faster than the regular version. 
+A good CUDA introductory example showcasing efficent shared memory usage. 
+
+Athanassios Kintsakis
+athanassios.kintsakis@gmail.com
+akintsakis@issel.ee.auth.gr
