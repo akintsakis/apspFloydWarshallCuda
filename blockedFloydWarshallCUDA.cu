@@ -327,7 +327,7 @@ gettimeofday(&second, &tzp);
   lapsed.tv_usec = second.tv_usec - first.tv_usec;
   lapsed.tv_sec = second.tv_sec - first.tv_sec;
 
-  printf("First Transfer CPU to GPU  Time elapsed: %lu, %lu s\n", lapsed.tv_sec, lapsed.tv_usec);
+  printf("First Transfer CPU to GPU  Time elapsed: %lu,%06lu s\n", lapsed.tv_sec, lapsed.tv_usec);
 ////////////////////////////////////////////////////GPU Calculation////////////////////////////////
 		
 	gettimeofday(&first, &tzp);	
@@ -358,7 +358,7 @@ gettimeofday(&second, &tzp);
   lapsed.tv_usec = second.tv_usec - first.tv_usec;
   lapsed.tv_sec = second.tv_sec - first.tv_sec;
 
-  printf("GPU Calculation Time elapsed: %lu, %lu s\n", lapsed.tv_sec, lapsed.tv_usec);
+  printf("GPU Calculation Time elapsed: %lu,%06lu s\n", lapsed.tv_sec, lapsed.tv_usec);
   printf("\n");
 
 //////////////////////////////////////////////////////////////////////////Second Mem Copy////////////////////
@@ -376,7 +376,7 @@ gettimeofday(&second, &tzp);
   lapsed.tv_usec = second.tv_usec - first.tv_usec;
   lapsed.tv_sec = second.tv_sec - first.tv_sec;
 
-  printf("Second Transfer GPU to CPU  Time elapsed: %lu, %lu s\n", lapsed.tv_sec, lapsed.tv_usec);
+  printf("Second Transfer GPU to CPU  Time elapsed: %lu,%06lu s\n", lapsed.tv_sec, lapsed.tv_usec);
   printf("\n");
 //////////////////////////////////////////////////////////////////////
 
@@ -390,7 +390,7 @@ gettimeofday(&fourth, &tzp2); //total time
   lapsed2.tv_usec = fourth.tv_usec - third.tv_usec;
   lapsed2.tv_sec = fourth.tv_sec - third.tv_sec;
 
-  printf("TOTAL GPU + TRANSFERS  Time elapsed: %lu, %lu s\n", lapsed2.tv_sec, lapsed2.tv_usec);
+  printf("TOTAL GPU + TRANSFERS  Time elapsed: %lu,%06lu s\n", lapsed2.tv_sec, lapsed2.tv_usec);
 
 
 //////////////////////////////////////////////////////////////
@@ -431,7 +431,7 @@ gettimeofday(&second, &tzp);
   lapsed.tv_usec = second.tv_usec - first.tv_usec;
   lapsed.tv_sec = second.tv_sec - first.tv_sec;
 
-  printf("CPU Time elapsed: %lu, %lu s\n", lapsed.tv_sec, lapsed.tv_usec);
+  printf("CPU Time elapsed: %lu,%06lu s\n", lapsed.tv_sec, lapsed.tv_usec);
 /////////////////////////////////////////////////////
 
 printf(" \n");
