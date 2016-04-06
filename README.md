@@ -9,14 +9,12 @@ The blocked version uses a different algorithm that utilizes shared memory and i
 A good CUDA introductory example showcasing efficent shared memory usage. 
 
 #To compile: 
-nvcc <name.cu> -o <name.out>
+Compile with: nvcc <name.cu> -o <name.out>
 
 nvcc <name.cu> -o <name.out> -arch compute_20 -code compute_20 (specifying arch and code, use whatever values your card supports)
 
 #To run:
-
-<name.out> <number_of_vertices>
-
+Run with: <name.out> <number_of_vertices>
 Example: ./name.out 256
 
 Athanassios Kintsakis
