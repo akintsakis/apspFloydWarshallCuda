@@ -8,13 +8,13 @@ The Floyd Warshall Algorithm is executed on the GPU first and then on the CPU so
 The blocked version uses a different algorithm that utilizes shared memory and is substantially faster (almost twice as fast) than the regular version. 
 A good CUDA introductory example showcasing efficent shared memory usage. 
 
-#To compile: 
+# To compile: 
 Compile with: nvcc <name.cu> -o <name.out>
 
 nvcc <name.cu> -o <name.out> -arch compute_20 -code compute_20 (specifying arch and code, use whatever values your card supports)
 
-#To run:
-Run with: <name.out> <number_of_vertices>
+# To run:
+Run with: name.out number_of_vertices
 Example: ./name.out 256
 
 Athanassios Kintsakis
